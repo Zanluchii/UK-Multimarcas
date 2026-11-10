@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UK Multimarcas | Seminovos em Londrina</title>
+  <meta name="description" content="UK Multimarcas - seminovos em Londrina/PR. Gire o carro em 360°, entre nele pelo site e agende sua visita.">
+  <meta name="theme-color" content="#0b0b0e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.min.js" } }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== TOPO ===================== -->
+  <header class="topo">
+    <div class="topo-inner">
+      <a href="#inicio" class="logo" aria-label="UK Multimarcas - início">
+        <svg viewBox="0 0 200 140" aria-hidden="true">
+          <circle cx="100" cy="70" r="56" fill="#fff" stroke="#e10600" stroke-width="24"/>
+          <rect x="6" y="52" width="188" height="36" rx="3" fill="#1f3a93" stroke="#0f1f5c" stroke-width="3"/>
+          <text x="100" y="79" text-anchor="middle" font-family="Titillium Web, sans-serif" font-weight="900" font-size="25" fill="#fff">UK MULTIMARCAS</text>
+        </svg>
+      </a>
+      <div class="topo-contatos">
+        <a class="btn btn-vermelho" data-whats="Olá! Quero aprovar meu crédito para financiamento." href="#">Aprove seu crédito</a>
+        <a class="contato" data-tel href="#"><span class="ic">☎</span><span data-campo="telefone"></span></a>
+        <a class="contato" data-whats="Olá! Vim pelo site da UK Multimarcas." href="#" target="_blank" rel="noopener"><span class="ic ic-whats">✆</span><span data-campo="whatsapp"></span></a>
+        <a class="contato endereco" data-mapa href="#" target="_blank" rel="noopener"><span class="ic">⌖</span><span data-campo="endereco"></span></a>
+      </div>
+    </div>
+    <div class="faixas-azuis" aria-hidden="true"></div>
+    <nav class="menu">
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <ul>
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#estoque">Seminovos</a></li>
+        <li><a href="#experiencia">Experiência 360°</a></li>
+        <li><a href="#f1">Paixão F1</a></li>
+        <li><a href="#financiamento">Financiamento</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <form class="busca" role="search">
+        <input type="search" id="busca" placeholder="Pesquise por modelo ou marca" aria-label="Pesquisar por modelo ou marca">
+        <button type="submit">Buscar</button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== LARGADA (HERO) ===================== -->
+    <section id="inicio" class="hero">
+      <svg class="hero-pistas" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+      <div class="hero-conteudo">
+        <button class="semaforo" aria-label="Repetir a largada" title="Repetir a largada">
+          <span class="luz"></span><span class="luz"></span><span class="luz"></span><span class="luz"></span><span class="luz"></span>
+        </button>
+        <p class="hero-pre">Lights out and away we go</p>
+        <h1 class="hero-titulo"><span>A maior</span> <span>de Londrina</span></h1>
+        <p class="hero-sub">Gire o carro em 360°, <strong>entre nele</strong> e sinta o painel antes mesmo de vir à loja.</p>
+        <div class="hero-acoes">
+          <a href="#estoque" class="btn btn-vermelho btn-grande">Ver o grid de largada</a>
+          <a href="#experiencia" class="btn btn-contorno btn-grande">Como funciona</a>
+        </div>
+      </div>
+      <div class="xadrez" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===================== MARCAS ===================== -->
+    <section class="marcas">
+      <h2 class="titulo-secao claro">Busque por marca</h2>
+      <div class="marcas-lista" id="marcas"></div>
+    </section>
+
+    <!-- ===================== ESTOQUE ===================== -->
+    <section id="estoque" class="estoque">
+      <div class="secao-cab">
+        <p class="kicker">Grid de largada</p>
+        <h2 class="titulo-secao">Nosso estoque</h2>
+        <p class="secao-desc">Toque em um carro para girá-lo em 360° e <strong>entrar nele</strong>.</p>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="vazio" id="vazio" hidden>Nenhum carro encontrado. <button class="link" id="limpar">Ver todos</button></p>
+    </section>
+
+    <!-- ===================== EXPERIÊNCIA ===================== -->
+    <section id="experiencia" class="experiencia">
+      <div class="secao-cab">
+        <p class="kicker">Volta de apresentação</p>
+        <h2 class="titulo-secao claro">Entre no carro pelo site</h2>
+      </div>
+      <ol class="passos">
+        <li>
+          <span class="passo-num">01</span>
+          <h3>Gire 360°</h3>
+          <p>Arraste para ver o carro de todos os lados no nosso showroom, com os pontos de destaque.</p>
+        </li>
+        <li>
+          <span class="passo-num">02</span>
+          <h3>Entre no carro</h3>
+          <p>A porta abre, você senta no banco do motorista e olha em volta: painel, volante e acabamento.</p>
+        </li>
+        <li>
+          <span class="passo-num">03</span>
+          <h3>Dê a partida</h3>
+          <p>Gostou? Dê a partida e agende sua visita pelo WhatsApp. O test drive de verdade é aqui na loja.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== F1 ===================== -->
+    <section id="f1" class="f1">
+      <div class="secao-cab">
+        <p class="kicker">Paixão pela pista</p>
+        <h2 class="titulo-secao claro">As pistas das nossas paredes</h2>
+        <p class="secao-desc claro">No nosso showroom, os carros ficam cercados pelos circuitos mais famosos da Fórmula 1. Venha conhecer pessoalmente.</p>
+      </div>
+      <div class="circuitos" id="circuitos"></div>
+    </section>
+
+    <!-- ===================== FINANCIAMENTO ===================== -->
+    <section id="financiamento" class="financiamento">
+      <div class="fin-inner">
+        <div>
+          <p class="kicker">Pit stop</p>
+          <h2>Aprove seu crédito em minutos</h2>
+          <p>Financiamento facilitado e avaliação do seu usado na troca. Fale com a nossa equipe.</p>
+        </div>
+        <div class="fin-acoes">
+          <a class="btn btn-branco btn-grande" data-whats="Olá! Quero simular um financiamento." href="#" target="_blank" rel="noopener">Simular financiamento</a>
+          <a class="btn btn-contorno btn-grande" data-whats="Olá! Quero avaliar meu carro na troca." href="#" target="_blank" rel="noopener">Avaliar meu usado</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer id="contato" class="rodape">
+    <div class="rodape-inner">
+      <div>
+        <h3>UK Multimarcas</h3>
+        <p data-campo="endereco"></p>
+        <a class="link-claro" data-mapa href="#" target="_blank" rel="noopener">Como chegar ›</a>
+      </div>
+      <div>
+        <h3>Fale com a gente</h3>
+        <p><a class="link-claro" data-tel href="#">Telefone: <span data-campo="telefone"></span></a></p>
+        <p><a class="link-claro" data-whats="Olá! Vim pelo site da UK Multimarcas." href="#" target="_blank" rel="noopener">WhatsApp: <span data-campo="whatsapp"></span></a></p>
+      </div>
+      <div>
+        <h3>Venha ver de perto</h3>
+        <p>O 360° mostra muito, mas nada substitui sentar no banco de verdade.</p>
+        <a class="btn btn-vermelho" data-whats="Olá! Quero agendar uma visita à loja." href="#" target="_blank" rel="noopener">Agendar visita</a>
+      </div>
+    </div>
+    <div class="xadrez fino" aria-hidden="true"></div>
+    <p class="copy">© <span id="ano"></span> UK Multimarcas · Londrina/PR</p>
+  </footer>
+
+  <!-- Redes fixas (lateral) -->
+  <div class="redes" aria-label="Redes sociais">
+    <a class="rede fb" data-link="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+    <a class="rede ig" data-link="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+    <a class="rede wa" data-whats="Olá! Vim pelo site da UK Multimarcas." href="#" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+  </div>
+
+  <!-- ===================== GARAGEM (visualização do carro) ===================== -->
+  <div id="garagem" class="garagem" hidden aria-modal="true" role="dialog" aria-labelledby="g-titulo">
+    <div class="g-palco" id="g-palco"></div>
+    <div class="g-fotos360" id="g-fotos360" hidden><img alt=""></div>
+    <div class="g-hotspots" id="g-hotspots"></div>
+
+    <header class="g-topo">
+      <button class="g-voltar" id="g-voltar" aria-label="Voltar ao estoque">‹ <span>Estoque</span></button>
+      <div class="g-titulo-bloco">
+        <p class="g-marca" id="g-marca"></p>
+        <h2 id="g-titulo"></h2>
+      </div>
+      <p class="g-preco" id="g-preco"></p>
+    </header>
+
+    <aside class="g-ficha" id="g-ficha"></aside>
+
+    <div class="g-dica" id="g-dica"><span class="mao">⟷</span> Arraste para girar o carro</div>
+
+    <div class="g-controles" id="g-controles">
+      <button class="g-som" id="g-som" aria-pressed="false" title="Ligar sons">🔇</button>
+      <button class="btn btn-vermelho btn-grande g-entrar" id="g-entrar">Entrar no carro</button>
+      <a class="btn btn-contorno btn-grande g-visita" data-visita href="#" target="_blank" rel="noopener">Agendar visita</a>
+    </div>
+
+    <!-- Painel de instrumentos (aparece dentro do carro) -->
+    <div class="g-painel" id="g-painel" hidden>
+      <div class="cluster">
+        <div class="gauge" id="gauge-rpm">
+          <svg viewBox="0 0 120 120"><g class="marcas-gauge"></g><line class="agulha" x1="60" y1="60" x2="60" y2="16"/><circle cx="60" cy="60" r="6"/></svg>
+          <span class="gauge-rot">RPM x1000</span>
+        </div>
+        <div class="lcd" id="lcd">
+          <p class="lcd-linha1" id="lcd1"></p>
+          <p class="lcd-linha2" id="lcd2"></p>
+          <p class="lcd-linha3" id="lcd3"></p>
+        </div>
+        <div class="gauge" id="gauge-km">
+          <svg viewBox="0 0 120 120"><g class="marcas-gauge"></g><line class="agulha" x1="60" y1="60" x2="60" y2="16"/><circle cx="60" cy="60" r="6"/></svg>
+          <span class="gauge-rot" id="odometro">km</span>
+        </div>
+      </div>
+      <div class="g-painel-acoes">
+        <button class="btn btn-contorno" id="g-sair">‹ Sair do carro</button>
+        <button class="btn btn-partida" id="g-partida"><span>Start</span><small>Engine</small></button>
+        <a class="btn btn-vermelho" data-visita href="#" target="_blank" rel="noopener">Agendar visita</a>
+      </div>
+    </div>
+
+    <div class="g-velocidade" aria-hidden="true"></div>
+    <div class="g-piscar" id="g-piscar" aria-hidden="true"></div>
+    <div class="g-sem3d" id="g-sem3d" hidden>
+      <p>Seu navegador não suporta a visualização 3D.</p>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
